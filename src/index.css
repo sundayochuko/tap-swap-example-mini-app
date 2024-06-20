@@ -30,3 +30,85 @@ p {
     font-size: 18px;
     color: #333;
 }
+
+
+.card_div {
+  display: flex;
+  flex-direction: column;
+  height: 550px;
+  width: 400px;
+  border-radius: 40px;
+  border: 2px solid #333;
+  padding: 10px;
+  position: relative;
+}
+
+.header_text {
+  font-size: 24px;
+  padding-top: 10px;
+}
+
+.earn_button {
+  height: 100px;
+  width: 120px;
+  align-self: center;
+  border-radius: 40px;
+  border: 2px solid #333;
+  background-color: rgb(36, 36, 217);
+  color: white;
+  font-size: 13px;
+  font-weight: lighter;
+  margin-top: 20px;
+
+}
+
+.buttons_div {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-around;
+  margin-top: 30px;
+}
+
+.default_button {
+  height: 80px;
+  margin-left: 8px;
+  margin-right: 8px;
+  border-radius: 20px;
+  border: 2px solid #333;
+  background-color: rgb(36, 36, 217);
+  color: white;
+  font-size: small;
+}
+
+.buttons_div_2 {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-around;
+  position: absolute;
+  bottom: 10px;
+  right: 0;
+  left: 0;
+}
+
+.default_button_2 {
+  height: 50px;
+  width: 80px;
+  border-radius: 8px;
+  border: 2px solid #333;
+  background-color: rgb(36, 36, 217);
+  color: white;
+  font-size: small;
+}
+
+.text_based_buttons {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  margin-top: 20px;
+}
+
+a:link {
+  color: black;
+}

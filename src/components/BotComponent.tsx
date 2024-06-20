@@ -1,34 +1,37 @@
 // src/components/BotComponent.tsx
-import React, { useState } from "react";
+import React from "react";
 
 const BotComponent: React.FC = () => {
-  const [message, setMessage] = useState<string>("");
-  const [response, setResponse] = useState<string>("");
-
-  const sendMessage = async () => {
-    // Replace with your actual Telegram bot API call
-    const botResponse = await fetch("/api/sendMessage", {
-      method: "POST",
-      headers: {
-        "Content-Type": "application/json",
-      },
-      body: JSON.stringify({ message }),
-    }).then((res) => res.json());
-
-    setResponse(botResponse.reply);
-  };
-
   return (
-    <div>
-      <h1>Telegram Bot MiniApp</h1>
-      <input
-        type="text"
-        value={message}
-        onChange={(e) => setMessage(e.target.value)}
-        placeholder="Enter your message"
-      />
-      <button onClick={sendMessage}>Send</button>
-      <p>Bot Response: {response}</p>
+    <div className="card_div">
+      <h1 className="header_text">Community Miner</h1>
+      <button className="earn_button">
+        Click to learn how to earn airdrop points
+      </button>
+      <div className="buttons_div">
+        <button className="default_button">
+          Airdrop points <br /> xx
+        </button>
+        <button className="default_button">
+          Mining rewards <br /> xx
+        </button>
+        <button className="default_button">
+          Miner race ranking <br /> xx
+        </button>
+      </div>
+      <div className="text_based_buttons">
+        <a href="/#">Device</a>
+        <a href="/#">Status</a>
+        <a href="/#">Airdrop points</a>
+        <a href="/#">Mining rewards</a>
+      </div>
+      <div className="buttons_div_2">
+        <button className="default_button_2">Home</button>
+        <button className="default_button_2">Miners race</button>
+        <button className="default_button_2">Referral</button>
+        <button className="default_button_2">Task</button>
+        <button className="default_button_2">Profile</button>
+      </div>
     </div>
   );
 };
